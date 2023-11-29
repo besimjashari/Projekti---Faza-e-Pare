@@ -26,6 +26,7 @@ nav{
 
 .main{
     display: flex;
+    flex-direction: column;
     height: 70vh;
     font-size: xx-large;
     background-image: url("foto/icon\ naten.png");
@@ -33,7 +34,7 @@ nav{
     color: white;
     font-weight: bolder;
     flex-direction: column;
-
+    padding: 10px 0px 0px 15px;
 }
 .main p{
     padding-bottom: 15px;
