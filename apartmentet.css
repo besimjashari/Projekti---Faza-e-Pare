@@ -1,0 +1,76 @@
+*{
+    margin: 0px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 10vh;
+
+}
+.logo{
+    display: flex;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+
+.faqet a{
+    padding: 0px 5px;
+    text-decoration: none;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+
+.main{
+    width: 90%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+
+}
+.llojet{
+    border: 1px solid black;
+    border-radius: 5%;
+    margin: 10px 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    
+}
+.llojet img{
+    padding-bottom: 10px;
+    border-radius: 2%;
+    width: 350px;
+    height: 250px;
+}
+
+
+
+.footer{
+    display: flex;
+    background-color: #231F20;
+    color: #fefefe;
+    justify-content: space-around;
+    padding: 40px;
+    flex-wrap: wrap;
+    font-size: 1em;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+.footerbox{
+    margin: 20px;
+}
+.footer-nav a{
+    text-decoration: none;
+    color: #656464;
+}
+.footer-nav{
+    text-align: center;
+    width: 100%;
+}
