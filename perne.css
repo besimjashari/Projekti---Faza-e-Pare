@@ -1,0 +1,56 @@
+*{
+    margin: 0px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 10vh;
+
+}
+.logo{
+    display: flex;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+
+.faqet a{
+    padding: 0px 5px;
+    text-decoration: none;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+.faqet a:hover{
+    font-size: larger;
+    font: bolder;
+}
+
+
+footer{
+    display: flex;
+    background-color: #231F25;
+    color: white;
+    justify-content: space-around;
+    padding: 40px;
+    flex-wrap: wrap;
+    font-size: 1em;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+.footerbox{
+    margin: 20px;
+}
+.fundi a{
+    text-decoration: none;
+    color: #656462;
+}
+.fundi a:hover{
+    color: white;
+}
+.fundi{
+    text-align: center;
+    width: 100%;
+}
