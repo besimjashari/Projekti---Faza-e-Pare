@@ -25,12 +25,14 @@ nav{
 }
 
 .main{
-    width: 90%;
+    background-image: url("foto/icon\ naten.png");
+    background-size:100% 100%;
     margin-top: 20px;
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    margin-bottom: 20px;
+    padding-bottom: 20px;
+    box-shadow: inset 0 0 0 100vmax rgba(0,0,0,.4);
 
 }
 .llojet{
@@ -48,6 +50,10 @@ nav{
     border-radius: 2%;
     width: 350px;
     height: 250px;
+}
+.llojet p{
+    color: white;
+    color-scheme: black;
 }
 
 
