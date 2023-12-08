@@ -33,7 +33,6 @@ nav{
     background-size:100% 100%;
     color: white;
     font-weight: bolder;
-    flex-direction: column;
     padding: 10px 0px 0px 15px;
 }
 .main p{
