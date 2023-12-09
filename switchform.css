@@ -71,16 +71,3 @@ a:hover {
     color: #ff0000;
     margin-bottom: 16px;
 }
-nav{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 10vh;
-
-}
-.logo{
-    display: flex;
-    align-items: center;
-    font-family: 'Montserrat', sans-serif;
-    
-}
