@@ -16,11 +16,9 @@
             <input type="password" id="loginPassword" required>
             <button type="button" onclick="validateLoginForm()">Login</button>
             <p class="error-message" id="loginErrorMessage"></p>
+            <p>Create a new account? <a href="#" onclick="showRegisterForm()">Register</a></p>
         </form>
-
-        <div class="switch-form">
-            <p>Don't have an account? <a href="#" onclick="showRegisterForm()">Create an Account</a></p>
-        </div>
+        
 
         <form id="registerForm" action="#" style="display:none;">
             <h2>Create an Account</h2>
@@ -34,6 +32,7 @@
             <input type="password" id="confirmPassword" required>
             <button type="button" onclick="validateRegisterForm()">Register</button>
             <p class="error-message" id="registerErrorMessage"></p>
+            <p>Already have an account? <a href="#" onclick="showLoginForm()">Login</a></p>
         </form>
     </div>
 
