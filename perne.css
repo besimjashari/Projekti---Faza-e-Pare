@@ -34,7 +34,7 @@ footer{
     background-color: #231F25;
     color: white;
     justify-content: space-around;
-    padding: 40px;
+    padding: 50px;
     flex-wrap: wrap;
     font-size: 1em;
     font-family: 'Montserrat', sans-serif;
@@ -43,7 +43,7 @@ footer{
     
 }
 .footerbox{
-    margin: 20px;
+    margin: 10px;
 }
 .fundi a{
     text-decoration: none;
@@ -56,3 +56,14 @@ footer{
     text-align: center;
     width: 100%;
 }
+.main p {
+    text-align: left;
+    width: 50%;
+    padding-left: 350px;
+    font-style: italic;
+
+     
+  }
+  .main img{
+    padding-left: 350px;
+  }
