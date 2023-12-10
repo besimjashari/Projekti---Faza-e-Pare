@@ -27,6 +27,50 @@ nav{
     font-size: larger;
     font: bolder;
 }
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+
+}
+.main p {
+    font-style: italic;
+    width: 50%;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    margin-left: 70px;
+    width: 400px;
+}
+input{
+    margin-top:10px ;
+    height: 25px;
+}
+.posht-main{
+    width: 50%;
+    display: flex;
+    height: 50vh;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+#mesazhi{
+    height: 200px;
+}
+button{
+    width: min-content;
+    margin-top: 10px;
+    background-color: white;
+    padding: 5px;
+    font-size: larger;
+}
+button:hover{
+    border: 2px solid red;
+    color: red;
+}
 
 
 footer{
@@ -56,14 +100,3 @@ footer{
     text-align: center;
     width: 100%;
 }
-.main p {
-    text-align: left;
-    width: 50%;
-    padding-left: 350px;
-    font-style: italic;
-
-     
-  }
-  .main img{
-    padding-left: 350px;
-  }

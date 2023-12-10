@@ -21,37 +21,46 @@
         
     </nav>
 
-    <div class="main">
-        <h3 style="padding-left: 350px;">Lokacioni</h3>
+    <div class="main" >
+        <br>
         <img src="foto/lokacioni.png" width="50%" alt=""> 
         <br>
         <br>
-    
-    
- <p class="text-align: right;">Icon Tower në Lakrishtë, Prishtinë, paraqet një ndërtesë banimi ekskluzive dhe ikonike, e vendosur në qendër të Lakrishtës. Ky kompleks rezidencial ofron një harmoni të përkryer mes dizajnit modern dhe komoditetit të jetesës së sotme.
+        <p>Icon Tower në Lakrishtë, Prishtinë, paraqet një ndërtesë banimi ekskluzive dhe ikonike, e vendosur në qendër të Lakrishtës. Ky kompleks rezidencial ofron një harmoni të përkryer mes dizajnit modern dhe komoditetit të jetesës së sotme.
 
-    Me një fasadë tërheqëse dhe arkitekturë moderne, Icon Tower dallon për cilësinë dhe stilin e tij të veçantë. Apartamentet janë projektuar me kujdes, duke përfshirë materiale të larta cilësie dhe përdorimin e teknologjisë së fundit për të siguruar një ambient të rehatshëm dhe të sigurt.
+            Me një fasadë tërheqëse dhe arkitekturë moderne, Icon Tower dallon për cilësinë dhe stilin e tij të veçantë. Apartamentet janë projektuar me kujdes, duke përfshirë materiale të larta cilësie dhe përdorimin e teknologjisë së fundit për të siguruar një ambient të rehatshëm dhe të sigurt.
+            
+            Pamja e mrekullueshme nga ballkonet e çdo apartamenti është një avantazh i vecantë i jetesës në Icon Tower. Pamjet e qytetit dhe natyrës rrethuese bëhen një pjesë e përhershme e përvojës së banimit.
+            
+            Ndërtesa ofron jo vetëm një vend për të jetuar, por një përvojë të vërtetë bashkëkohore. Me pjesë të përbashkëta dhe ambiente të specializuara, përfshirë qendrën e fitnessit, zonën e lojërave për fëmijë, dhe ambiente tregtare në katin e parë, Icon Tower mundëson një jetesë aktive dhe të përshtatshme për banorët.
+            
+            Vendosur në një lokacion të privilegjuar, Icon Tower ofron akses të lehtë në qendrën e qytetit, institucionet arsimore dhe shëndetësore, si dhe mundësi për blerje dhe argëtim. Kjo e bën kompleksin ideale për familjet, profesionistët dhe të gjithë ata që kërkojnë një jetesë të kualitetit dhe të përshtatshme.
+            
+            Çdo aspekt i banimit në Icon Tower është menduar për të përshtatur nevojave të banorëve. Përvoja e pashoqe e banimit ndërtohet mbi një themele të qëndrueshme dhe të kujdesshme për mjedisin, duke e bërë atë jo vetëm një vend për të jetuar, por një shtëpi që ndiheni krenarë ta quani "tënde". 
+        </p>
     
-    Pamja e mrekullueshme nga ballkonet e çdo apartamenti është një avantazh i vecantë i jetesës në Icon Tower. Pamjet e qytetit dhe natyrës rrethuese bëhen një pjesë e përhershme e përvojës së banimit.
-    
-    Ndërtesa ofron jo vetëm një vend për të jetuar, por një përvojë të vërtetë bashkëkohore. Me pjesë të përbashkëta dhe ambiente të specializuara, përfshirë qendrën e fitnessit, zonën e lojërave për fëmijë, dhe ambiente tregtare në katin e parë, Icon Tower mundëson një jetesë aktive dhe të përshtatshme për banorët.
-    
-    Vendosur në një lokacion të privilegjuar, Icon Tower ofron akses të lehtë në qendrën e qytetit, institucionet arsimore dhe shëndetësore, si dhe mundësi për blerje dhe argëtim. Kjo e bën kompleksin ideale për familjet, profesionistët dhe të gjithë ata që kërkojnë një jetesë të kualitetit dhe të përshtatshme.
-    
-    Çdo aspekt i banimit në Icon Tower është menduar për të përshtatur nevojave të banorëve. Përvoja e pashoqe e banimit ndërtohet mbi një themele të qëndrueshme dhe të kujdesshme për mjedisin, duke e bërë atë jo vetëm një vend për të jetuar, por një shtëpi që ndiheni krenarë ta quani "tënde".  - Drejtor gjeneral Bekim Jashari 
-    
-    
-    
-    </p>
-</div>
-       
-
-            <br>
-
-
+     <br>
+        <div class="posht-main">
+            <div class="text">
+                <h3>Keni Pyetje?</h3>
+                <i>
+                    Na shkruani ketu per çdo bashkupunim apo 
+                    paqartesi qe keni,
+                    <br>
+                    Ne jemi te hapur te bisedojme.
+                </i>
+            </div>
+            <div class="kontakt">
+                <form action="">
+                    <input type="text" id="emri" placeholder="Emri" required>
+                    <input type="text"  id="mbiemri" placeholder="Mbiemri" required>
+                    <input type="email" id="email" placeholder="Email" required>
+                    <input type="text" id="mesazhi" placeholder="Mesazhi juaj!" required>
+                    <button type="submit" onclick="validateForm()">Dergo</button>
+                </form>
+            </div>
+        </div>
     </div>
-      
-
    
     <footer>
         <div class="footerbox">
@@ -80,6 +89,32 @@
             <a href="perne.html">Për ne</a>
         </div>
     </footer>
+
+    <script>
+        function validateForm() {
+            var name=document.getElementById('emri').value;
+            var email=document.getElementById('email').value;
+            var message=document.getElementById('mesazhi').value;
+
+            var nameRegex=/^[a-zA-Z\s]+$/;
+            if (!nameRegex.test(name)) {
+                alert('Ju lutem shenoni nje emer!');
+                return false;
+            }
+            var emailRegex=/^[^\s@]+@[^\s@]+\.+[^\s@]+$/;
+            if (!emailRegex.test(email)) {
+                alert('Sheno nje email valid!');
+                return false;
+            }
+            if(message.length<5){
+                alert('Ju lutem shenoni nje mesazh me te gjate!')
+                return false;
+            }
+            
+        }
+
+
+    </script>
     
 </body>
 </html>
