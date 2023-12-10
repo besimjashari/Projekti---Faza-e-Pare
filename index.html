@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: rgb(219, 217, 217);
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            padding: 10px;
+            border: 1px solid black;
+            border-radius: 2%;
+            background-color: rgb(251, 242, 231);
+            
+        }
+        input{
+            margin: 3px;
+        }
+        button{
+            width: min-content;
+            align-self: center;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <label for="name">Name</label>
+        <input type="text" id="name" required>
+        <label for="email">Email</label>
+        <input type="text" id="email" required>
+        <label for="password">Password</label>
+        <input type="password" id="password" required>
+        <label for="confirmPassword">Confirm Password</label>
+        <input type="password" id="confirmPassword" required>
+        <button type="submit" onclick="validateForm()">Register</button>
+    </form>
+    
+
+    <script>
+        function validateForm() {
+            var name=document.getElementById('name').value;
+            var email=document.getElementById('email').value;
+            var password=document.getElementById('password').value;
+            var confirmPassword=document.getElementById('confirmPassword').value;
+
+            
+            var nameRegex=/^[a-zA-Z\s]+$/;
+            if (!nameRegex.test(name)) {
+                alert('Please enter a valid name!');
+                return false;
+            }
+
+            var emailRegex=/^[^\s@]+@[^\s@]+\.+[^\s@]+$/;
+            if (!emailRegex.test(email)) {
+                alert('Please enter a valid email!');
+                return false;
+            }
+            
+            if (password.length<6) {
+                alert('Please enter a longer password!');
+                return false;
+            }
+
+            if (confirmPassword!=password) {
+                alert('Your password doesnt match!');
+                return false;
+            }
+        }
+    </script>
+</body>
+</html>
