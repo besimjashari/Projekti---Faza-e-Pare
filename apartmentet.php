@@ -41,7 +41,7 @@
             <p>Penthouse 450 m&sup2</p>
         </div>
         <div class="llojet">
-            <img src="foto/apartmentet/penthouse_800m2.png" alt="foto">
+            <img src="foto/apartmentet/penthouse 800m2.png" alt="foto">
             <p>Penthouse 800 m&sup2</p>
         </div>
         <div class="llojet">

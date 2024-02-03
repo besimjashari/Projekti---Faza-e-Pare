@@ -17,6 +17,7 @@
 }
 .main p {
     font-style: italic;
+    width: 80%;
 }
 
 </style>

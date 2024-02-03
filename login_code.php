@@ -15,6 +15,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if ($authenticatedUser) {
         $_SESSION['username'] = $authenticatedUser['username'];
         $_SESSION['role'] = $authenticatedUser['role'];
+        $_SESSION['user_id'] = $authenticatedUser['id'];
 
         header("location: home.php");
     } else {
