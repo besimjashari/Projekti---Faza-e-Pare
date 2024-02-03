@@ -15,7 +15,7 @@ function startConnection(){
             echo "Connection failed "; 
             return null;
         }else{
-           echo "Connection successful!";
+           //echo "Connection successful!";
            return $conn;
         }
         
