@@ -1,3 +1,6 @@
+<?php 
+    include_once 'registerController.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -42,7 +45,6 @@
         button{
             width: min-content;
             align-self: center;
-            background-color: rgba(255, 255, 255, 0.796);
         }
         button:hover{
             border: 2px solid red;
@@ -50,25 +52,38 @@
         a:hover{
             color: red;
         }
-
     </style>
 </head>
 <body>
-    <form action="">
+    <form action = "<?php echo $_SERVER['PHP_SELF']?>" method = "POST">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
         <label for="email">Email</label>
-        <input type="email" id="email" required>
+        <input type="text" id="email" name="email" required>
+        <label for="username">Username</label>
+        <input type="text" name="username" required>
         <label for="password">Password</label>
-        <input type="password" id="password" required>
+        <input type="password" id="password" name="password" required>
+        <label for="confirmPassword">Confirm Password</label>
+        <input type="password" id="confirmPassword" required>
         <div class="fund">
-            <a href="register.html">Register</a>
-            <button type="submit" onclick="validateForm()">Login</button>
+            <a href="login.php">Login</a>
+            <button type="submit" name="registerBtn" onclick="validateForm()">Register</button>
         </div>
     </form>
-
     <script>
         function validateForm() {
+            var name=document.getElementById('name').value;
             var email=document.getElementById('email').value;
             var password=document.getElementById('password').value;
+            var confirmPassword=document.getElementById('confirmPassword').value;
+
+            
+            var nameRegex=/^[a-zA-Z\s]+$/;
+            if (!nameRegex.test(name)) {
+                alert('Please enter a valid name!');
+                return false;
+            }
 
             var emailRegex=/^[^\s@]+@[^\s@]+\.+[^\s@]+$/;
             if (!emailRegex.test(email)) {
@@ -80,10 +95,12 @@
                 alert('Please enter a longer password!');
                 return false;
             }
+
+            if (confirmPassword!=password) {
+                alert('Your password doesnt match!');
+                return false;
+            }
         }
-
-
     </script>
-    
 </body>
 </html>

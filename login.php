@@ -42,6 +42,7 @@
         button{
             width: min-content;
             align-self: center;
+            background-color: rgba(255, 255, 255, 0.796);
         }
         button:hover{
             border: 2px solid red;
@@ -49,42 +50,29 @@
         a:hover{
             color: red;
         }
+
     </style>
 </head>
 <body>
-    <form action="">
-        <label for="name">Name</label>
-        <input type="text" id="name" required>
-        <label for="email">Email</label>
-        <input type="text" id="email" required>
+    <form action="login_code.php" method="POST">
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username" required>
         <label for="password">Password</label>
-        <input type="password" id="password" required>
-        <label for="confirmPassword">Confirm Password</label>
-        <input type="password" id="confirmPassword" required>
+        <input type="password" id="password" name="password" required>
         <div class="fund">
-            <a href="login.html">Login</a>
-            <button type="submit" onclick="validateForm()">Register</button>
+            <a href="register.php">Register</a>
+            <button type="submit" onclick="validateForm()">Login</button>
         </div>
     </form>
-    
 
     <script>
         function validateForm() {
-            var name=document.getElementById('name').value;
-            var email=document.getElementById('email').value;
+            var name=document.getElementById('username').value;
             var password=document.getElementById('password').value;
-            var confirmPassword=document.getElementById('confirmPassword').value;
 
-            
             var nameRegex=/^[a-zA-Z\s]+$/;
             if (!nameRegex.test(name)) {
                 alert('Please enter a valid name!');
-                return false;
-            }
-
-            var emailRegex=/^[^\s@]+@[^\s@]+\.+[^\s@]+$/;
-            if (!emailRegex.test(email)) {
-                alert('Please enter a valid email!');
                 return false;
             }
             
@@ -92,12 +80,10 @@
                 alert('Please enter a longer password!');
                 return false;
             }
-
-            if (confirmPassword!=password) {
-                alert('Your password doesnt match!');
-                return false;
-            }
         }
+
+
     </script>
+    
 </body>
 </html>
