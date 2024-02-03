@@ -7,18 +7,7 @@
     <link rel="stylesheet" href="apartmentet.css">
 </head>
 <body>
-    <nav>
-        <div class="logo">
-            <img src="foto/download2.jpg" alt="logo" width="50px">
-            <span style="padding-left: 10px;">ICON GROUP</span></div>
-        <div class="faqet">
-            <a href="home.html">KRYEFAQJA</a>
-            <a href="apartmentet.html">APARTMENTET</a>
-            <a href="perne.html">PËR NE</a>
-            <a href="login.html">HYNI</a>
-        </div>
-        
-    </nav>
+    <?php include 'header.php';?>
     <h2 style="text-align: center;">Këto janë apartmentet tona te lira!</h2>
     <h3 style="text-align: center; margin-top: 20px;">“We shape our buildings;
         thereafter they shape us”
@@ -52,7 +41,7 @@
             <p>Penthouse 450 m&sup2</p>
         </div>
         <div class="llojet">
-            <img src="foto/apartmentet/penthouse 800m2.png" alt="foto">
+            <img src="foto/apartmentet/penthouse_800m2.png" alt="foto">
             <p>Penthouse 800 m&sup2</p>
         </div>
         <div class="llojet">
@@ -61,33 +50,7 @@
         </div>
 
     </div>
-    <footer>
-        <div class="footerbox">
-            <h3>Icon Group</h3>
-            <p>Icon Tower është një objekt banimi ekskluziv
-                <br>dhe ikonik, i vendosur në qendër të Lakrishtës,
-                <br> Prishtinë. Ky kompleks rezidencial paraqet 
-                 <br>një përputhje perfekte mes elegancës së dizajnit 
-                 <br>modern dhe komoditetit të jetesës së sotme.
-           </p>
-        </div>
-        <div class="footerbox">
-            <h3>Adresa:</h3>
-            <p>Objekti Icon Tower</p>
-            <p>Tirana, 10000 Prishtinë,</p>
-            <p>Kosovë.</p>
-        </div>
-        <div class="footerbox">
-            <h3>Kontakti</h3>
-            <p>info@icon-group.com</p>
-            <p>+383 45 123 123</p>
-        </div>
-        <div class="fundi">
-            <a href="home.html">Kryefaqja</a> |
-            <a href="apartmentet.html">Apartmentet</a> |
-            <a href="perne.html">Për ne</a>
-        </div>
-    </footer>
+    <?php include 'footer.php';?>
 
     
 </body>
