@@ -10,6 +10,20 @@ include_once "ApartmentRepository.php";
 $strep = new UserRepository();
 $users = $strep->getAllUsers();
 
+session_start();
+if (isset($_SESSION['user_id'])) {
+    $userId = $_SESSION['user_id'];
+    $user = $strep->getUserById($userId);
+
+    if ($_SESSION['role']!='1') {
+        header("Location: home.php?error=nuk_ke_akses"); 
+        exit();
+    }
+} else {
+    header("Location: login.php"); 
+    exit();
+}
+
 $contactFormRepository = new ContactFormRepository();
 $contactForms = $contactFormRepository->getAllContactForms();
 
